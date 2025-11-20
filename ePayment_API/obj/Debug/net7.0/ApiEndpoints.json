@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "SendPaymentIMPS",
+    "RelativePath": "api/IciciProgram/send-payment-imps",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ePayment_API.DTOs.PaymentRequestDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "SendPaymentNEFT",
+    "RelativePath": "api/IciciProgram/send-payment-neft",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ePayment_API.DTOs.PaymentRequestNEFT_DTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "SendPaymentRTGS",
+    "RelativePath": "api/IciciProgram/send-payment-rtgs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ePayment_API.DTOs.PaymentRequestRTGS_DTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.UBIController",
+    "Method": "MakeUBIPayment",
+    "RelativePath": "api/UBI/make-UBIpayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ePayment_API.DTOs.UBI.UBIPaymentDataDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.UBIController",
+    "Method": "TestBreakpoint",
+    "RelativePath": "api/UBI/test-breakpoint",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.UBIController",
+    "Method": "TestEncryption",
+    "RelativePath": "api/UBI/test-encryption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rawInput",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,478 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ePayment_API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/IciciProgram/send-payment-imps": {
+      "post": {
+        "tags": [
+          "IciciProgram"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/IciciProgram/send-payment-neft": {
+      "post": {
+        "tags": [
+          "IciciProgram"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestNEFT_DTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestNEFT_DTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestNEFT_DTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/IciciProgram/send-payment-rtgs": {
+      "post": {
+        "tags": [
+          "IciciProgram"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestRTGS_DTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestRTGS_DTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequestRTGS_DTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/UBI/make-UBIpayment": {
+      "post": {
+        "tags": [
+          "UBI"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UBIPaymentDataDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UBIPaymentDataDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UBIPaymentDataDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/UBI/test-breakpoint": {
+      "get": {
+        "tags": [
+          "UBI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/UBI/test-encryption": {
+      "post": {
+        "tags": [
+          "UBI"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PaymentRequestDTO": {
+        "type": "object",
+        "properties": {
+          "localTxnDtTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "beneAccNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "beneIFSC": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "tranRefNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentRef": {
+            "type": "string",
+            "nullable": true
+          },
+          "senderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "retailerCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "passCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "bcID": {
+            "type": "string",
+            "nullable": true
+          },
+          "aggrId": {
+            "type": "string",
+            "nullable": true
+          },
+          "crpId": {
+            "type": "string",
+            "nullable": true
+          },
+          "crpUsr": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaymentRequestNEFT_DTO": {
+        "type": "object",
+        "properties": {
+          "tranRefNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "senderAcctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "beneAccNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "beneName": {
+            "type": "string",
+            "nullable": true
+          },
+          "beneIFSC": {
+            "type": "string",
+            "nullable": true
+          },
+          "narration1": {
+            "type": "string",
+            "nullable": true
+          },
+          "narration2": {
+            "type": "string",
+            "nullable": true
+          },
+          "crpId": {
+            "type": "string",
+            "nullable": true
+          },
+          "crpUsr": {
+            "type": "string",
+            "nullable": true
+          },
+          "aggrId": {
+            "type": "string",
+            "nullable": true
+          },
+          "aggrName": {
+            "type": "string",
+            "nullable": true
+          },
+          "urn": {
+            "type": "string",
+            "nullable": true
+          },
+          "txnType": {
+            "type": "string",
+            "nullable": true
+          },
+          "workfloW_REQD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaymentRequestRTGS_DTO": {
+        "type": "object",
+        "properties": {
+          "aggrid": {
+            "type": "string",
+            "nullable": true
+          },
+          "corpid": {
+            "type": "string",
+            "nullable": true
+          },
+          "userid": {
+            "type": "string",
+            "nullable": true
+          },
+          "urn": {
+            "type": "string",
+            "nullable": true
+          },
+          "aggrname": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueid": {
+            "type": "string",
+            "nullable": true
+          },
+          "debitacc": {
+            "type": "string",
+            "nullable": true
+          },
+          "creditacc": {
+            "type": "string",
+            "nullable": true
+          },
+          "ifsc": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "txntype": {
+            "type": "string",
+            "nullable": true
+          },
+          "payeename": {
+            "type": "string",
+            "nullable": true
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "workfloW_REQD": {
+            "type": "string",
+            "nullable": true
+          },
+          "benlei": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UBIPaymentDataDTO": {
+        "type": "object",
+        "properties": {
+          "tranType": {
+            "type": "string",
+            "nullable": true
+          },
+          "tranSubType": {
+            "type": "string",
+            "nullable": true
+          },
+          "debitAccNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "benAccNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "benIFSC": {
+            "type": "string",
+            "nullable": true
+          },
+          "benName": {
+            "type": "string",
+            "nullable": true
+          },
+          "tranAmount": {
+            "type": "string",
+            "nullable": true
+          },
+          "remitterName": {
+            "type": "string",
+            "nullable": true
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "custRef": {
+            "type": "string",
+            "nullable": true
+          },
+          "cmsRef": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "mmid": {
+            "type": "string",
+            "nullable": true
+          },
+          "tranDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "valueDate": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

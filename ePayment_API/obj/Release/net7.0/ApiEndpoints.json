@@ -1,0 +1,135 @@
+[
+  {
+    "ContainingType": "ePayment_API.Controllers.EpayController",
+    "Method": "GetDistrict",
+    "RelativePath": "api/Epay/GetDistrict",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ePayment_API.DTOs.GetDistrictDTO, ePayment_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.EpayController",
+    "Method": "SendPayment",
+    "RelativePath": "api/Epay/sendPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.EpaymentController",
+    "Method": "SendPayment",
+    "RelativePath": "api/Epayment/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.GyanController",
+    "Method": "MakePayment",
+    "RelativePath": "api/Gyan/make-payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "CheckStatus",
+    "RelativePath": "api/IciciProgram/check-status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "CheckStatusDefault",
+    "RelativePath": "api/IciciProgram/check-status-default",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "SendPayment",
+    "RelativePath": "api/IciciProgram/send-payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ePayment_API.DTOs.PaymentRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "SendPaymentRaw",
+    "RelativePath": "api/IciciProgram/send-payment-raw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.ImpsEpaymentController",
+    "Method": "SendPayment",
+    "RelativePath": "api/ImpsEpayment/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ePayment_API.WeatherForecast, ePayment_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

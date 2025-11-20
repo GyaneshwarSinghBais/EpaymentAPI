@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="classes\UBI1.cs" />
+    <Compile Remove="Controllers\EpayController.cs" />
+    <Compile Remove="Controllers\EpaymentController.cs" />
+    <Compile Remove="Controllers\GyanController.cs" />
+    <Compile Remove="Controllers\ImpsEpaymentController.cs" />
+    <Compile Remove="Controllers\UBIProgramController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+
+	  <PackageReference Include="AutoMapper" Version="12.0.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+	  <!--<PackageReference Include="mongocsharpdriver" Version="2.23.0" />
+	  <PackageReference Include="MongoDB.Driver" Version="2.23.0" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Keys\icici_public.cer">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Keys\rsa_apikey.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

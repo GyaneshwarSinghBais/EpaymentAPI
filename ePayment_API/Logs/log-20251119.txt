@@ -1,0 +1,80 @@
+2025-11-19 17:01:41.887 +05:30 [INF] Now listening on: https://localhost:7238
+2025-11-19 17:01:41.907 +05:30 [INF] Now listening on: http://localhost:5037
+2025-11-19 17:01:41.976 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-19 17:01:41.976 +05:30 [INF] Hosting environment: Development
+2025-11-19 17:01:41.976 +05:30 [INF] Content root path: G:\gyan\ePayment_API\ePayment_API
+2025-11-19 17:01:42.976 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2025-11-19 17:01:43.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 182.7903ms
+2025-11-19 17:01:43.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2025-11-19 17:01:43.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2025-11-19 17:01:43.167 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 16509 application/javascript;+charset=utf-8 5.2229ms
+2025-11-19 17:01:44.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 920.7459ms
+2025-11-19 17:01:44.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2025-11-19 17:01:44.115 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.1711ms
+2025-11-19 17:01:59.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/api/UBI/test-breakpoint - -
+2025-11-19 17:01:59.681 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API)'
+2025-11-19 17:01:59.709 +05:30 [INF] Route matched with {action = "TestBreakpoint", controller = "UBI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestBreakpoint() on controller ePayment_API.Controllers.UBIController (ePayment_API).
+2025-11-19 17:01:59.846 +05:30 [INF] Executed action ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API) in 134.1455ms
+2025-11-19 17:01:59.848 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API)'
+2025-11-19 17:01:59.851 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'ePayment_API.Controllers.UBIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-19 17:01:59.869 +05:30 [ERR] Unhandled exception
+System.InvalidOperationException: Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'ePayment_API.Controllers.UBIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-19 17:01:59.872 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/api/UBI/test-breakpoint - - - 500 - - 197.1437ms
+2025-11-19 17:09:43.108 +05:30 [INF] Now listening on: https://localhost:7238
+2025-11-19 17:09:43.125 +05:30 [INF] Now listening on: http://localhost:5037
+2025-11-19 17:09:43.199 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-19 17:09:43.199 +05:30 [INF] Hosting environment: Development
+2025-11-19 17:09:43.199 +05:30 [INF] Content root path: G:\gyan\ePayment_API\ePayment_API
+2025-11-19 17:09:43.828 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2025-11-19 17:09:43.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 167.5038ms
+2025-11-19 17:09:43.996 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2025-11-19 17:09:43.996 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2025-11-19 17:09:44.001 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 16509 application/javascript;+charset=utf-8 4.8738ms
+2025-11-19 17:09:44.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.6148ms
+2025-11-19 17:09:44.057 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2025-11-19 17:09:44.063 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.9137ms
+2025-11-19 17:09:57.053 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/api/UBI/test-breakpoint - -
+2025-11-19 17:09:57.059 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API)'
+2025-11-19 17:09:57.072 +05:30 [INF] Route matched with {action = "TestBreakpoint", controller = "UBI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestBreakpoint() on controller ePayment_API.Controllers.UBIController (ePayment_API).
+2025-11-19 17:10:05.688 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-19 17:10:05.698 +05:30 [INF] Executed action ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API) in 8623.6761ms
+2025-11-19 17:10:05.698 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API)'
+2025-11-19 17:10:05.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/api/UBI/test-breakpoint - - - 200 - application/json;+charset=utf-8 8646.1967ms
+2025-11-19 17:10:14.899 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/api/UBI/test-breakpoint - -
+2025-11-19 17:10:14.901 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API)'
+2025-11-19 17:10:14.901 +05:30 [INF] Route matched with {action = "TestBreakpoint", controller = "UBI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestBreakpoint() on controller ePayment_API.Controllers.UBIController (ePayment_API).
+2025-11-19 17:10:17.795 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-19 17:10:17.795 +05:30 [INF] Executed action ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API) in 2894.2805ms
+2025-11-19 17:10:17.795 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.UBIController.TestBreakpoint (ePayment_API)'
+2025-11-19 17:10:17.795 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/api/UBI/test-breakpoint - - - 200 - application/json;+charset=utf-8 2896.3311ms
+2025-11-19 17:11:31.669 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7238/api/UBI/test-encryption application/json 64
+2025-11-19 17:11:31.681 +05:30 [INF] CORS policy execution successful.
+2025-11-19 17:11:31.682 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.UBIController.TestEncryption (ePayment_API)'
+2025-11-19 17:11:31.691 +05:30 [INF] Route matched with {action = "TestEncryption", controller = "UBI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestEncryption(System.Object) on controller ePayment_API.Controllers.UBIController (ePayment_API).
+2025-11-19 17:11:31.950 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`5[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-19 17:11:31.953 +05:30 [INF] Executed action ePayment_API.Controllers.UBIController.TestEncryption (ePayment_API) in 261.7209ms
+2025-11-19 17:11:31.953 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.UBIController.TestEncryption (ePayment_API)'
+2025-11-19 17:11:31.953 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7238/api/UBI/test-encryption application/json 64 - 200 - application/json;+charset=utf-8 283.3646ms
