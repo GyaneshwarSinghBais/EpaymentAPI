@@ -106,3 +106,5 @@ G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\staticwebassets.build.json.
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\staticwebassets.build.endpoints.json
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\staticwebassets.upToDateCheck.txt
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\ePayment.D111F822.Up2Date
+G:\gyan\ePayment_API\ePayment_API\bin\Release\net7.0\BouncyCastle.Cryptography.dll
+G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\ePayment_API.sourcelink.json

@@ -1,0 +1,47 @@
+2025-11-21 13:06:41.677 +05:30 [INF] Now listening on: https://localhost:7238
+2025-11-21 13:06:41.692 +05:30 [INF] Now listening on: http://localhost:5037
+2025-11-21 13:06:41.754 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-21 13:06:41.754 +05:30 [INF] Hosting environment: Development
+2025-11-21 13:06:41.754 +05:30 [INF] Content root path: G:\gyan\ePayment_API\ePayment_API
+2025-11-21 13:06:42.546 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2025-11-21 13:06:42.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 204.8553ms
+2025-11-21 13:06:42.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2025-11-21 13:06:42.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2025-11-21 13:06:42.763 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 16509 application/javascript;+charset=utf-8 4.8234ms
+2025-11-21 13:06:42.818 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.7579ms
+2025-11-21 13:06:42.892 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2025-11-21 13:06:42.901 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.5439ms
+2025-11-21 13:10:38.797 +05:30 [INF] Now listening on: https://localhost:7238
+2025-11-21 13:10:38.814 +05:30 [INF] Now listening on: http://localhost:5037
+2025-11-21 13:10:38.877 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-21 13:10:38.877 +05:30 [INF] Hosting environment: Development
+2025-11-21 13:10:38.877 +05:30 [INF] Content root path: G:\gyan\ePayment_API\ePayment_API
+2025-11-21 13:10:39.495 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2025-11-21 13:10:39.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 152.3368ms
+2025-11-21 13:10:39.649 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2025-11-21 13:10:39.649 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2025-11-21 13:10:39.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 16509 application/javascript;+charset=utf-8 4.4251ms
+2025-11-21 13:10:39.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.8579ms
+2025-11-21 13:10:39.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2025-11-21 13:10:39.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.6355ms
+2025-11-21 13:15:31.138 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7238/api/UBI/test-encryption application/json 34
+2025-11-21 13:15:31.151 +05:30 [INF] CORS policy execution successful.
+2025-11-21 13:15:31.159 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.UBIController.TestEncryption (ePayment_API)'
+2025-11-21 13:15:31.216 +05:30 [INF] Route matched with {action = "TestEncryption", controller = "UBI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestEncryption(System.Object) on controller ePayment_API.Controllers.UBIController (ePayment_API).
+2025-11-21 13:15:31.854 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`5[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-21 13:15:31.866 +05:30 [INF] Executed action ePayment_API.Controllers.UBIController.TestEncryption (ePayment_API) in 646.2737ms
+2025-11-21 13:15:31.867 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.UBIController.TestEncryption (ePayment_API)'
+2025-11-21 13:15:31.869 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7238/api/UBI/test-encryption application/json 34 - 200 - application/json;+charset=utf-8 731.1203ms
+2025-11-21 13:15:54.354 +05:30 [INF] Now listening on: https://localhost:7238
+2025-11-21 13:15:54.376 +05:30 [INF] Now listening on: http://localhost:5037
+2025-11-21 13:15:54.451 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-21 13:15:54.451 +05:30 [INF] Hosting environment: Development
+2025-11-21 13:15:54.451 +05:30 [INF] Content root path: G:\gyan\ePayment_API\ePayment_API
+2025-11-21 13:15:55.124 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2025-11-21 13:15:55.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 181.2415ms
+2025-11-21 13:15:55.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2025-11-21 13:15:55.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2025-11-21 13:15:55.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 16509 application/javascript;+charset=utf-8 4.5702ms
+2025-11-21 13:15:55.349 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.4369ms
+2025-11-21 13:15:55.375 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2025-11-21 13:15:55.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.8716ms

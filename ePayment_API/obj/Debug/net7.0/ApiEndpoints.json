@@ -1,6 +1,27 @@
 [
   {
     "ContainingType": "ePayment_API.Controllers.IciciProgramController",
+    "Method": "GetPaymentStatus",
+    "RelativePath": "api/IciciProgram/payment-status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ePayment_API.DTOs.ICICI.ICICIStatusRequestDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ePayment_API.Controllers.IciciProgramController",
     "Method": "SendPaymentIMPS",
     "RelativePath": "api/IciciProgram/send-payment-imps",
     "HttpMethod": "POST",

@@ -1,0 +1,83 @@
+2025-12-04 12:03:42.403 +05:30 [INF] Now listening on: https://localhost:7238
+2025-12-04 12:03:42.501 +05:30 [INF] Now listening on: http://localhost:5037
+2025-12-04 12:03:42.668 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 12:03:42.669 +05:30 [INF] Hosting environment: Development
+2025-12-04 12:03:42.669 +05:30 [INF] Content root path: G:\gyan\ePayment_API\ePayment_API
+2025-12-04 12:03:43.256 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger - -
+2025-12-04 12:03:43.386 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger - - - 301 0 - 131.2973ms
+2025-12-04 12:03:43.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2025-12-04 12:03:43.431 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 39.5115ms
+2025-12-04 12:03:43.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/swagger-ui.css - -
+2025-12-04 12:03:43.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/swagger-ui-standalone-preset.js - -
+2025-12-04 12:03:43.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/swagger-ui-bundle.js - -
+2025-12-04 12:03:43.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2025-12-04 12:03:43.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2025-12-04 12:03:43.443 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 16509 application/javascript;+charset=utf-8 8.8358ms
+2025-12-04 12:03:43.487 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-04 12:03:43.487 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-12-04 12:03:43.487 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/swagger-ui.css - - - 200 144929 text/css 53.9949ms
+2025-12-04 12:03:43.487 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 53.7359ms
+2025-12-04 12:03:43.488 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-12-04 12:03:43.488 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 54.6977ms
+2025-12-04 12:03:43.512 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.9552ms
+2025-12-04 12:03:43.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2025-12-04 12:03:43.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.0085ms
+2025-12-04 12:06:34.668 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 111
+2025-12-04 12:06:34.671 +05:30 [INF] CORS policy execution successful.
+2025-12-04 12:06:34.700 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:06:34.866 +05:30 [INF] Route matched with {action = "GetPaymentStatus", controller = "IciciProgram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentStatus(ePayment_API.DTOs.ICICI.ICICIStatusRequestDTO, System.String) on controller ePayment_API.Controllers.IciciProgramController (ePayment_API).
+2025-12-04 12:06:35.964 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Net.HttpStatusCode, System.Net.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-04 12:06:35.989 +05:30 [INF] Executed action ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API) in 1120.0803ms
+2025-12-04 12:06:35.990 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:06:35.992 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 111 - 200 - application/json;+charset=utf-8 1324.1055ms
+2025-12-04 12:10:31.344 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 123
+2025-12-04 12:10:31.349 +05:30 [INF] CORS policy execution successful.
+2025-12-04 12:10:31.349 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:10:31.349 +05:30 [INF] Route matched with {action = "GetPaymentStatus", controller = "IciciProgram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentStatus(ePayment_API.DTOs.ICICI.ICICIStatusRequestDTO, System.String) on controller ePayment_API.Controllers.IciciProgramController (ePayment_API).
+2025-12-04 12:10:31.524 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Net.HttpStatusCode, System.Net.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-04 12:10:31.526 +05:30 [INF] Executed action ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API) in 176.8688ms
+2025-12-04 12:10:31.526 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:10:31.527 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 123 - 200 - application/json;+charset=utf-8 183.0194ms
+2025-12-04 12:16:41.574 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 123
+2025-12-04 12:16:41.576 +05:30 [INF] CORS policy execution successful.
+2025-12-04 12:16:41.576 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:16:41.576 +05:30 [INF] Route matched with {action = "GetPaymentStatus", controller = "IciciProgram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentStatus(ePayment_API.DTOs.ICICI.ICICIStatusRequestDTO, System.String) on controller ePayment_API.Controllers.IciciProgramController (ePayment_API).
+2025-12-04 12:16:41.846 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Net.HttpStatusCode, System.Net.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-04 12:16:41.846 +05:30 [INF] Executed action ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API) in 270.5361ms
+2025-12-04 12:16:41.846 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:16:41.846 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 123 - 200 - application/json;+charset=utf-8 272.0834ms
+2025-12-04 12:19:23.811 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7238/api/IciciProgram/send-payment-neft?token=A3f9K8pL2eJ7dH4 application/json 408
+2025-12-04 12:19:23.812 +05:30 [INF] CORS policy execution successful.
+2025-12-04 12:19:23.847 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.IciciProgramController.SendPaymentNEFT (ePayment_API)'
+2025-12-04 12:19:23.855 +05:30 [INF] Route matched with {action = "SendPaymentNEFT", controller = "IciciProgram"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendPaymentNEFT(ePayment_API.DTOs.PaymentRequestNEFT_DTO, System.String) on controller ePayment_API.Controllers.IciciProgramController (ePayment_API).
+2025-12-04 12:19:30.783 +05:30 [ERR] Error in SendPayment
+System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ePayment_API.classes.ICICIProgram.invokeRequest(String data, String url, String method, String bankTransferType, String callName) in G:\gyan\ePayment_API\ePayment_API\classes\ICICIProgram.cs:line 64
+   at ePayment_API.classes.ICICIProgram.paraNEFT(PaymentRequestNEFT_DTO request) in G:\gyan\ePayment_API\ePayment_API\classes\ICICIProgram.cs:line 336
+   at ePayment_API.Controllers.IciciProgramController.SendPaymentNEFT(PaymentRequestNEFT_DTO request, String token) in G:\gyan\ePayment_API\ePayment_API\Controllers\IciciProgramController.cs:line 77
+2025-12-04 12:19:30.835 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-12-04 12:19:30.835 +05:30 [INF] Executed action ePayment_API.Controllers.IciciProgramController.SendPaymentNEFT (ePayment_API) in 6979.8205ms
+2025-12-04 12:19:30.835 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.IciciProgramController.SendPaymentNEFT (ePayment_API)'
+2025-12-04 12:19:30.835 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7238/api/IciciProgram/send-payment-neft?token=A3f9K8pL2eJ7dH4 application/json 408 - 500 - text/plain;+charset=utf-8 7024.1189ms
+2025-12-04 12:29:01.635 +05:30 [INF] Now listening on: https://localhost:7238
+2025-12-04 12:29:01.650 +05:30 [INF] Now listening on: http://localhost:5037
+2025-12-04 12:29:01.717 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 12:29:01.717 +05:30 [INF] Hosting environment: Development
+2025-12-04 12:29:01.717 +05:30 [INF] Content root path: G:\gyan\ePayment_API\ePayment_API
+2025-12-04 12:29:01.971 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2025-12-04 12:29:02.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 128.8688ms
+2025-12-04 12:29:02.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2025-12-04 12:29:02.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2025-12-04 12:29:02.109 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 16509 application/javascript;+charset=utf-8 4.2682ms
+2025-12-04 12:29:02.140 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.3505ms
+2025-12-04 12:29:02.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2025-12-04 12:29:02.206 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.0170ms
+2025-12-04 12:29:21.580 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 123
+2025-12-04 12:29:21.585 +05:30 [INF] CORS policy execution successful.
+2025-12-04 12:29:21.590 +05:30 [INF] Executing endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:29:21.615 +05:30 [INF] Route matched with {action = "GetPaymentStatus", controller = "IciciProgram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentStatus(ePayment_API.DTOs.ICICI.ICICIStatusRequestDTO, System.String) on controller ePayment_API.Controllers.IciciProgramController (ePayment_API).
+2025-12-04 12:29:22.042 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Net.HttpStatusCode, System.Net.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-04 12:29:22.055 +05:30 [INF] Executed action ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API) in 436.8102ms
+2025-12-04 12:29:22.056 +05:30 [INF] Executed endpoint 'ePayment_API.Controllers.IciciProgramController.GetPaymentStatus (ePayment_API)'
+2025-12-04 12:29:22.058 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7238/api/IciciProgram/payment-status?token=A3f9K8pL2eJ7dH4 application/json 123 - 200 - application/json;+charset=utf-8 478.8948ms

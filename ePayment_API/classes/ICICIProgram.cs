@@ -28,7 +28,11 @@ namespace ePayment_API.classes
 
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(httpUrl);
             httpWebRequest.ContentType = "application/json";
-            httpWebRequest.Headers.Add("apikey", "tqwr5u6KBKlFPydVYIe4AGSD0uHdnFES");
+            //httpWebRequest.Headers.Add("apikey", "tqwr5u6KBKlFPydVYIe4AGSD0uHdnFES"); //Sandbox API Key
+
+            httpWebRequest.Headers.Add("apikey", "LLLS5cNmbXKhaTGvp2fpSVJlpT1zyzSN"); // Production Composite //NEFT and RTGS
+           // httpWebRequest.Headers.Add("apikey", "xahrKT4UTqyyq92nBUgk2NA44TDG1dR"); // CIB //NEFT and RTGS
+            
 
             if (bankTransferType.ToUpper() == "IMPS")
             {
@@ -295,7 +299,8 @@ namespace ePayment_API.classes
              };
 
             var payload = JsonConvert.SerializeObject(_parameterList);
-            string mandate = invokeRequest(payload, "https://apibankingonesandbox.icicibank.com/api/v1/composite-payment", "POST", bankTransferType);
+            //string mandate = invokeRequest(payload, "https://apibankingonesandbox.icicibank.com/api/v1/composite-payment", "POST", bankTransferType);
+            string mandate = invokeRequest(payload, "https://apibankingonesandbox.icicibank.com/api/v1/composite-payment_sv", "POST", bankTransferType);
             Console.WriteLine(mandate);
             return mandate;
         }
@@ -321,16 +326,18 @@ namespace ePayment_API.classes
         { "aggrName", request.AggrName },
         { "urn", request.Urn },
         { "txnType", request.TxnType },   // e.g., "RGS" for NEFT
-        { "WORKFLOW_REQD", request.WORKFLOW_REQD },
-        //{ "BENLEI", request.BENLEI },
-        { "localTxnDtTime", currentDateTime }
+        { "WORKFLOW_REQD", request.WORKFLOW_REQD }
+        //{ "BENLEI", "" },
+       // { "localTxnDtTime", currentDateTime }
     };
 
             var payload = JsonConvert.SerializeObject(parameterList);
 
             string response = invokeRequest(
                 payload,
-                "https://apibankingonesandbox.icicibank.com/api/v1/composite-payment",
+ //"https://apibankingonesandbox.icicibank.com/api/v1/composite-payment",
+        "https://apibankingone.icicibank.com/api/v1/composite-payment",
+
                 "POST",
                 bankTransferType
             );
@@ -367,7 +374,7 @@ namespace ePayment_API.classes
 
             string response = invokeRequest(
                 payload,
-                "https://apibankingonesandbox.icicibank.com/api/v1/composite-payment",
+                "https://apibankingone.icicibank.com/api/v1/composite-payment",
                 "POST",
                 bankTransferType
             );

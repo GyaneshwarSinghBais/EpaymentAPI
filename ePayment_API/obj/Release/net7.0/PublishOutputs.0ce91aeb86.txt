@@ -9,6 +9,7 @@ G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\ePayment_API.pdb
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\AutoMapper.dll
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\Azure.Core.dll
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\Azure.Identity.dll
+G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\BouncyCastle.Cryptography.dll
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 G:\gyan\ePayment_API\ePayment_API\obj\Release\net7.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
